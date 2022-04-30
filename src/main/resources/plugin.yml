@@ -1,0 +1,34 @@
+name: AutoReboot
+version: '0.1'
+main: it.lilborgo.autoreboot.Main
+api-version: 1.18
+prefix: AutoReboot
+load: POSTWORLD
+authors: [ lilborgo ]
+description: An automatic reboot plugin
+
+commands:
+  autoreboot:
+    description: Automatic reboot
+    usage: /autoreboot
+    aliases: [ar]
+
+permissions:
+  autoreboot.command:
+    description: Allows run /autoreboot
+    default: not op
+  autoreboot.help:
+    description: Allows run /autoreboot help
+    default: not op
+  autoreboot.reload:
+    description: Allows run /autoreboot reload
+    default: op
+  autoreboot.reboot:
+    description: Allows run /autoreboot reboot
+    default: op
+  autoreboot.tleft:
+    description: Allows run /autoreboot help tleft
+    default: not op
+  autoreboot.cancel:
+    description: Allows run /autoreboot cancel
+    default: op

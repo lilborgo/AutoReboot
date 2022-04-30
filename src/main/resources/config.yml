@@ -1,0 +1,51 @@
+###########
+#GENERAL
+###########
+
+reload-message: "&aReloaded AutoReboot!"
+reboot-command: restart
+
+###########
+#TIMER
+###########
+
+#Reboot types:
+#   timestamp
+#   timer
+#   off
+#
+# timestamp: reboot on a particular timestamp (ex 03:00)
+# timer reboot: every X hour and minutes (ex 1:30 one hour and 30 minutes)
+# periodic: reboot the server on a specific time every X days
+# off: no reboot
+timer-type: 'timer'
+
+#reset the timer using /autoreboot reload
+reset-on-reload: false
+
+#timestamp the reboot
+reboot-timestamp:
+  - '17:10'
+  - '18:20'
+
+#timer for the reboot
+timer-time: '03:00'
+
+###########
+#REMINDER
+###########
+
+#message sent to player when remaining n minutes
+minutes-message: "&4Server rebooting in %d minutes!"
+
+#the list of minutes to warn the players before rebooting
+minutes:
+  - 5
+  - 2
+  - 1
+
+#message sent to player when remaining n seconds
+seconds-message: "&4Server rebooting in %d seconds!"
+
+#the seconds before warning the players
+seconds: 15

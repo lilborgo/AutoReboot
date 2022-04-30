@@ -1,2 +1,25 @@
+<img src="logo.jpeg" alt="" align="right">
+
 # AutoReboot
-A plug-in for automatic rebooting Spigot server
+AutoReboot is a rebooting plugin for Minecraft servers. It allows to reboot the server periodically or on a timetable.
+
+# Build
+AutoReboot uses Maven to handle dependencies and building.
+
+#### Requirements
+
+* Maven
+* Java 8 JDK or newer
+* Git
+
+#### Compiling
+
+```bash
+git https://github.com/lilborgo/AutoReboot
+cd AutoReboot/
+maven build
+```
+
+# License
+
+This software is distributed on GPLv3.0, more information available in [LICENSE.md](LICENSE.md).
